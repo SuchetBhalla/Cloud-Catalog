@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title> ELL 887 </title>
+</head>
+
+<body>
+<div class="container">
+<h1> Product Management System </h1>
+
+  <!-- Button to add a product -->
+  <button onclick="clearScreen(); toggleForm()"> Add Product </button>
+
+  <!-- Button to display products -->
+  <button onclick="displayProductList()"> Display Products </button>
+
+  <!-- Form to add a product -->
+  <form id="productForm" class= "hidden">
+
+  <label> Product Name: </label>
+  <input type="text" id="productName" required>
+
+  <label> Price: </label>
+  <input type="number" id="productPrice" step="1" required>
+
+  <label> Description: </label>
+  <input type="text" id ="productDescription">
+
+  <button type="button" id="submitbutton" onclick="addProduct()"> Submit </button>
+
+  </form>
+  <!-- Form ends -->
+
+  <!-- Section to print the products -->
+  <div id="productList" class= "hidden">
+  </div>
+
+<script src="script.js"> </script>
+
+</body>
+
+</html>

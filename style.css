@@ -1,0 +1,58 @@
+body{
+  font-family: Arial;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+h1{
+  text-align: center;
+  color: #333;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+}
+
+.hidden{
+  display: none;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#submitbutton{
+  background-color: #FF0000;
+  width: 500px;
+  margin: auto; /* Center-aligns the button */
+}
+
+/* Adds space between buttons */
+button + button {
+    margin-left: 20px;
+}
+
+table {
+    margin: auto; /* Center-aligns the table */
+    width: 100%;
+}
